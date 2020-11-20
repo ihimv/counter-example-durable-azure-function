@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DurableCounter", "DurableCounter\DurableCounter.csproj", "{AB0F37D2-51FB-4CC0-BFDF-58BABDA46342}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AB0F37D2-51FB-4CC0-BFDF-58BABDA46342}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB0F37D2-51FB-4CC0-BFDF-58BABDA46342}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB0F37D2-51FB-4CC0-BFDF-58BABDA46342}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB0F37D2-51FB-4CC0-BFDF-58BABDA46342}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E182FAA1-6A38-4DA0-A19B-D0B47F349AD8}
+	EndGlobalSection
+EndGlobal
