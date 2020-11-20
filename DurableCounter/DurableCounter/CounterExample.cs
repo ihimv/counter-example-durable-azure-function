@@ -21,7 +21,7 @@ namespace DurableCounter
 
             if (input != null && !string.IsNullOrWhiteSpace(input.OperationName))
             {
-                // myCounter is the ID here.
+                // "myCounter" is the ID here.
                 // We want only one instance of the counter. So a fixed ID
                 // In cases, where we need several counter, we can have different IDs.
                 // The ID of the counter can also be passed as input to the orchestration.
@@ -62,9 +62,7 @@ namespace DurableCounter
             return ctx.GetState<int>();
         }
 
-        /// <summary>
-        /// An HTTP Trigger Function to increment the counter value by 1.
-        /// </summary>
+        /// <summary> HTTP Trigger Function to increment the counter value by 1. </summary>
         [FunctionName("increment")]
         public static async Task<HttpResponseMessage> HttpIncrementCounter(
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post")] HttpRequestMessage req,
@@ -79,9 +77,7 @@ namespace DurableCounter
             return starter.CreateCheckStatusResponse(req, instanceId);
         }
 
-        /// <summary>
-        /// An HTTP Trigger Function to decrement the counter value by 1.
-        /// </summary>
+        /// <summary> HTTP Trigger Function to decrement the counter value by 1. </summary>
         [FunctionName("decrement")]
         public static async Task<HttpResponseMessage> HttpDecrementCounter(
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post")] HttpRequestMessage req,
